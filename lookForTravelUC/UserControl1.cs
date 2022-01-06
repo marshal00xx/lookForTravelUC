@@ -32,18 +32,11 @@ namespace lookForTravelUC
                 "Zoumi", "Laouamra", "Zagora", "Ait Ourir", "Sidi Bibi", "Aziylal", "Sidi Yahia El Gharb", "Biougra",
                 "Taounate", "Bouznika", "Aourir", "Zaïo", "Aguelmous", "El Hajeb", "Mnasra", "Mediouna", "Zeghanghane",
                 "Imzouren", "Loudaya", "Oulad Zemam", "Bou Ahmed", "Tit Mellil", "Arbaoua", "Douar Oulad Hssine",
-                "Bahharet Oulad Ayyad", "Mechraa Bel Ksiri", "Mograne", "Dar Ould Zidouh", "Asilah", "Demnat",
-                "Lalla Mimouna", "Fritissa", "Arfoud", "Tameslouht", "Bou Arfa", "Sidi Smai’il", "Taza",
-                "Souk et Tnine Jorf el Mellah", "Mehdya", "Oulad Hammou", "Douar Oulad Aj-jabri", "Aïn Taoujdat",
-                "Dar Bel Hamri", "Chichaoua", "Tahla", "Bellaa", "Oulad Yaïch", "Ksebia", "Tamorot", "Moulay Bousselham",
-                "Sabaa Aiyoun", "Bourdoud", "Aït Faska", "Boureït", "Lamzoudia", "Oulad Said", "Missour", "Ain Aicha",
-                "Zawyat ech Cheïkh", "Bouknadel", "El Ghiate", "Safsaf", "Ouaoula", "Douar Olad. Salem", "Oulad Tayeb",
-                "Echemmaia Est", "Oulad Barhil", "Douar ’Ayn Dfali", "Setti Fatma", "Skoura", "Douar Ouled Ayad",
-                "Zawyat an Nwaçer", "Khenichet-sur Ouerrha","Ayt Mohamed", "Gueznaia", "Oulad Hassoune", "Bni Frassen",
-                "Tifariti", "Zawit Al Bour",
+                "Bahharet Oulad Ayyad", "Mechraa Bel Ksiri", "Mograne"
             };
             destCityCB.Items.AddRange(listOfCities);
             origineCityCB.Items.AddRange(listOfCities);
+            datePicker.MinDate = DateTime.Now;
         }
         private void seachBtn_Click(object sender, EventArgs e) {
 
