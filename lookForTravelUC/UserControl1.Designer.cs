@@ -28,51 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.origineCityTB = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.destCityTB = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.origineCityCB = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.destCityCB = new Guna.UI2.WinForms.Guna2ComboBox();
             this.datePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.seachBtn = new Guna.UI2.WinForms.Guna2Button();
             this.numOfPassgersTB = new Guna.UI2.WinForms.Guna2NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.numOfPassgersTB)).BeginInit();
             this.SuspendLayout();
             // 
-            // origineCityTB
+            // origineCityCB
             // 
-            this.origineCityTB.BackColor = System.Drawing.Color.Transparent;
-            this.origineCityTB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.origineCityTB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.origineCityTB.FocusedColor = System.Drawing.Color.Empty;
-            this.origineCityTB.FocusedState.Parent = this.origineCityTB;
-            this.origineCityTB.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.origineCityTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.origineCityTB.FormattingEnabled = true;
-            this.origineCityTB.HoverState.Parent = this.origineCityTB;
-            this.origineCityTB.ItemHeight = 30;
-            this.origineCityTB.ItemsAppearance.Parent = this.origineCityTB;
-            this.origineCityTB.Location = new System.Drawing.Point(22, 21);
-            this.origineCityTB.Name = "origineCityTB";
-            this.origineCityTB.ShadowDecoration.Parent = this.origineCityTB;
-            this.origineCityTB.Size = new System.Drawing.Size(287, 36);
-            this.origineCityTB.TabIndex = 0;
+            this.origineCityCB.BackColor = System.Drawing.Color.Transparent;
+            this.origineCityCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.origineCityCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.origineCityCB.FocusedColor = System.Drawing.Color.Empty;
+            this.origineCityCB.FocusedState.Parent = this.origineCityCB;
+            this.origineCityCB.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.origineCityCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.origineCityCB.FormattingEnabled = true;
+            this.origineCityCB.HoverState.Parent = this.origineCityCB;
+            this.origineCityCB.ItemHeight = 30;
+            this.origineCityCB.ItemsAppearance.Parent = this.origineCityCB;
+            this.origineCityCB.Location = new System.Drawing.Point(22, 21);
+            this.origineCityCB.Name = "origineCityCB";
+            this.origineCityCB.ShadowDecoration.Parent = this.origineCityCB;
+            this.origineCityCB.Size = new System.Drawing.Size(287, 36);
+            this.origineCityCB.TabIndex = 0;
             // 
-            // destCityTB
+            // destCityCB
             // 
-            this.destCityTB.BackColor = System.Drawing.Color.Transparent;
-            this.destCityTB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.destCityTB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.destCityTB.FocusedColor = System.Drawing.Color.Empty;
-            this.destCityTB.FocusedState.Parent = this.destCityTB;
-            this.destCityTB.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.destCityTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.destCityTB.FormattingEnabled = true;
-            this.destCityTB.HoverState.Parent = this.destCityTB;
-            this.destCityTB.ItemHeight = 30;
-            this.destCityTB.ItemsAppearance.Parent = this.destCityTB;
-            this.destCityTB.Location = new System.Drawing.Point(22, 69);
-            this.destCityTB.Name = "destCityTB";
-            this.destCityTB.ShadowDecoration.Parent = this.destCityTB;
-            this.destCityTB.Size = new System.Drawing.Size(287, 36);
-            this.destCityTB.TabIndex = 0;
+            this.destCityCB.BackColor = System.Drawing.Color.Transparent;
+            this.destCityCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.destCityCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.destCityCB.FocusedColor = System.Drawing.Color.Empty;
+            this.destCityCB.FocusedState.Parent = this.destCityCB;
+            this.destCityCB.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.destCityCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.destCityCB.FormattingEnabled = true;
+            this.destCityCB.HoverState.Parent = this.destCityCB;
+            this.destCityCB.ItemHeight = 30;
+            this.destCityCB.ItemsAppearance.Parent = this.destCityCB;
+            this.destCityCB.Location = new System.Drawing.Point(22, 69);
+            this.destCityCB.Name = "destCityCB";
+            this.destCityCB.ShadowDecoration.Parent = this.destCityCB;
+            this.destCityCB.Size = new System.Drawing.Size(287, 36);
+            this.destCityCB.TabIndex = 0;
             // 
             // datePicker
             // 
@@ -135,10 +135,11 @@
             this.Controls.Add(this.numOfPassgersTB);
             this.Controls.Add(this.seachBtn);
             this.Controls.Add(this.datePicker);
-            this.Controls.Add(this.destCityTB);
-            this.Controls.Add(this.origineCityTB);
+            this.Controls.Add(this.destCityCB);
+            this.Controls.Add(this.origineCityCB);
             this.Name = "mainUC";
             this.Size = new System.Drawing.Size(334, 218);
+            this.Load += new System.EventHandler(this.mainUC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numOfPassgersTB)).EndInit();
             this.ResumeLayout(false);
 
@@ -146,8 +147,8 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2ComboBox origineCityTB;
-        private Guna.UI2.WinForms.Guna2ComboBox destCityTB;
+        private Guna.UI2.WinForms.Guna2ComboBox origineCityCB;
+        private Guna.UI2.WinForms.Guna2ComboBox destCityCB;
         private Guna.UI2.WinForms.Guna2DateTimePicker datePicker;
         private Guna.UI2.WinForms.Guna2Button seachBtn;
         private Guna.UI2.WinForms.Guna2NumericUpDown numOfPassgersTB;
