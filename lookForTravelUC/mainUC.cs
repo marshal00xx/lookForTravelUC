@@ -63,7 +63,8 @@ namespace lookForTravelUC
                         command.CommandType = CommandType.StoredProcedure;
                         command.CommandText = "usp_getOriginToDestination";
                         command.Parameters.AddWithValue("@companyId", _companyId);
-                        using (SqlDataReader reader = command.ExecuteReader()) {
+                        using (SqlDataReader reader = command.ExecuteReader()){
+                            table.Clear();
                             table.Load(reader);
                             travelCB.DataSource = table;
                             travelCB.DisplayMember = "travel";
