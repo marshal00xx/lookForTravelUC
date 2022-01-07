@@ -35,27 +35,31 @@ namespace lookForTravelUC
                 if(table.Rows.Count > 0) {
                     datePickerValueLbl.Text = datePicker.Value.ToShortDateString();
                     if (table.Rows[travelCB.SelectedIndex].Field<String>(4).Equals("1")) {
-                        messageLabel.Text = $"{table.Rows[travelCB.SelectedIndex].Field<TimeSpan>(2)} -- {table.Rows[travelCB.SelectedIndex].Field<TimeSpan>(3)}";
-                        getTicketLbl.Text = "Sign In To get a Ticket";
-                        Point point = new Point(126, 134);
-                        getTicketLbl.Location = point;
-                        getTicketLbl.Visible = true;
-                        searchResultPanel.Visible = true;
+                        uCanGetATicket();
                     }
                     else {
-                        // Sign In To get a Ticket
-                        //No travels left for today
-                        messageLabel.Text = "No travels left for today";
-                        Point point = new Point(53, 134);
-                        getTicketLbl.Location = point;
-                        getTicketLbl.Text = "Try changing the dates of your search.";
-                        searchResultPanel.Visible = true;
-                        getTicketLbl.Visible = true;
+                        if (DateTime.Compare(DateTime.Today.Date, datePicker.Value.Date) < 0)
+                            uCanGetATicket();
+                        else {
+                            messageLabel.Text = "No travels left for today";
+                            Point point = new Point(53, 134);
+                            getTicketLbl.Location = point;
+                            getTicketLbl.Text = "Try changing the dates of your search.";
+                            searchResultPanel.Visible = true;
+                            getTicketLbl.Visible = true;
+                        }
                     }
                 }
             }
             catch(Exception ex) {
                 Debug.WriteLine(ex.Message);
+            }
+        }
+        private void getTicketLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
+            if (!getTicketLbl.Text.Equals(" Sign In To get a Ticket"))
+                searchResultPanel.Visible = false;
+            else {
+                // todo logic to run when the user wanna signin
             }
         }
         public void setDataSources() {
@@ -81,13 +85,13 @@ namespace lookForTravelUC
                 Debug.WriteLine(ex.Message);
             }
         }
-
-        private void getTicketLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
-            if (!getTicketLbl.Text.Equals(" Sign In To get a Ticket"))
-                searchResultPanel.Visible = false;
-            else {
-                // todo logic to run when the user wanna signin
-            }
+        private void uCanGetATicket() {
+            messageLabel.Text = $"{table.Rows[travelCB.SelectedIndex].Field<TimeSpan>(2)} -- {table.Rows[travelCB.SelectedIndex].Field<TimeSpan>(3)}";
+            getTicketLbl.Text = "Sign In To get a Ticket";
+            Point point = new Point(126, 134);
+            getTicketLbl.Location = point;
+            getTicketLbl.Visible = true;
+            searchResultPanel.Visible = true;
         }
     }
 }
