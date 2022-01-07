@@ -78,7 +78,7 @@ namespace lookForTravelUC
         }
 
         private void getTicketLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
-            if (getTicketLbl.Text.Equals(" Sign In To get a Ticket"))
+            if (!getTicketLbl.Text.Equals(" Sign In To get a Ticket"))
                 searchResultPanel.Visible = false;
             else {
                 // todo logic to run when the user wanna signin
