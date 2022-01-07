@@ -28,51 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.origineCityCB = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.destCityCB = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.travelCB = new Guna.UI2.WinForms.Guna2ComboBox();
             this.datePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.seachBtn = new Guna.UI2.WinForms.Guna2Button();
             this.numOfPassgersTB = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             ((System.ComponentModel.ISupportInitialize)(this.numOfPassgersTB)).BeginInit();
+            this.gunaPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // origineCityCB
+            // travelCB
             // 
-            this.origineCityCB.BackColor = System.Drawing.Color.Transparent;
-            this.origineCityCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.origineCityCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.origineCityCB.FocusedColor = System.Drawing.Color.Empty;
-            this.origineCityCB.FocusedState.Parent = this.origineCityCB;
-            this.origineCityCB.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.origineCityCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.origineCityCB.FormattingEnabled = true;
-            this.origineCityCB.HoverState.Parent = this.origineCityCB;
-            this.origineCityCB.ItemHeight = 30;
-            this.origineCityCB.ItemsAppearance.Parent = this.origineCityCB;
-            this.origineCityCB.Location = new System.Drawing.Point(22, 21);
-            this.origineCityCB.Name = "origineCityCB";
-            this.origineCityCB.ShadowDecoration.Parent = this.origineCityCB;
-            this.origineCityCB.Size = new System.Drawing.Size(287, 36);
-            this.origineCityCB.TabIndex = 0;
-            // 
-            // destCityCB
-            // 
-            this.destCityCB.BackColor = System.Drawing.Color.Transparent;
-            this.destCityCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.destCityCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.destCityCB.FocusedColor = System.Drawing.Color.Empty;
-            this.destCityCB.FocusedState.Parent = this.destCityCB;
-            this.destCityCB.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.destCityCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.destCityCB.FormattingEnabled = true;
-            this.destCityCB.HoverState.Parent = this.destCityCB;
-            this.destCityCB.ItemHeight = 30;
-            this.destCityCB.ItemsAppearance.Parent = this.destCityCB;
-            this.destCityCB.Location = new System.Drawing.Point(22, 69);
-            this.destCityCB.Name = "destCityCB";
-            this.destCityCB.ShadowDecoration.Parent = this.destCityCB;
-            this.destCityCB.Size = new System.Drawing.Size(287, 36);
-            this.destCityCB.TabIndex = 0;
+            this.travelCB.BackColor = System.Drawing.Color.Transparent;
+            this.travelCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.travelCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.travelCB.FocusedColor = System.Drawing.Color.Empty;
+            this.travelCB.FocusedState.Parent = this.travelCB;
+            this.travelCB.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.travelCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.travelCB.FormattingEnabled = true;
+            this.travelCB.HoverState.Parent = this.travelCB;
+            this.travelCB.ItemHeight = 30;
+            this.travelCB.ItemsAppearance.Parent = this.travelCB;
+            this.travelCB.Location = new System.Drawing.Point(22, 69);
+            this.travelCB.Name = "travelCB";
+            this.travelCB.ShadowDecoration.Parent = this.travelCB;
+            this.travelCB.Size = new System.Drawing.Size(287, 36);
+            this.travelCB.TabIndex = 0;
             // 
             // datePicker
             // 
@@ -127,30 +110,52 @@
             this.numOfPassgersTB.TabIndex = 5;
             this.numOfPassgersTB.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(116)))), ((int)(((byte)(212)))));
             // 
+            // gunaPanel1
+            // 
+            this.gunaPanel1.Controls.Add(this.gunaLabel1);
+            this.gunaPanel1.Location = new System.Drawing.Point(0, 11);
+            this.gunaPanel1.Name = "gunaPanel1";
+            this.gunaPanel1.Size = new System.Drawing.Size(334, 52);
+            this.gunaPanel1.TabIndex = 6;
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(116)))), ((int)(((byte)(212)))));
+            this.gunaLabel1.Location = new System.Drawing.Point(102, 15);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(121, 28);
+            this.gunaLabel1.TabIndex = 0;
+            this.gunaLabel1.Text = "gunaLabel1";
+            this.gunaLabel1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // mainUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.gunaPanel1);
             this.Controls.Add(this.numOfPassgersTB);
             this.Controls.Add(this.seachBtn);
             this.Controls.Add(this.datePicker);
-            this.Controls.Add(this.destCityCB);
-            this.Controls.Add(this.origineCityCB);
+            this.Controls.Add(this.travelCB);
             this.Name = "mainUC";
             this.Size = new System.Drawing.Size(334, 218);
             this.Load += new System.EventHandler(this.mainUC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numOfPassgersTB)).EndInit();
+            this.gunaPanel1.ResumeLayout(false);
+            this.gunaPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2ComboBox origineCityCB;
-        private Guna.UI2.WinForms.Guna2ComboBox destCityCB;
+        private Guna.UI2.WinForms.Guna2ComboBox travelCB;
         private Guna.UI2.WinForms.Guna2DateTimePicker datePicker;
         private Guna.UI2.WinForms.Guna2Button seachBtn;
         private Guna.UI2.WinForms.Guna2NumericUpDown numOfPassgersTB;
+        private Guna.UI.WinForms.GunaPanel gunaPanel1;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
     }
 }
