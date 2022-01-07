@@ -25,8 +25,8 @@ namespace lookForTravelUC
             InitializeComponent();
         }
         private void mainUC_Load(object sender, EventArgs e) {
-            _companyId = "COMP1000";
-            setDataSources();
+            /*_companyId = "COMP1000";
+            setDataSources();*/
             numOfPassgersTB.Minimum = 1;
             datePicker.MinDate = DateTime.Now;
         }
