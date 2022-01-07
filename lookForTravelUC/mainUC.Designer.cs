@@ -156,7 +156,7 @@
             this.getTicketLbl.AutoSize = true;
             this.getTicketLbl.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.getTicketLbl.LinkColor = System.Drawing.Color.Black;
-            this.getTicketLbl.Location = new System.Drawing.Point(130, 134);
+            this.getTicketLbl.Location = new System.Drawing.Point(126, 134);
             this.getTicketLbl.Name = "getTicketLbl";
             this.getTicketLbl.Size = new System.Drawing.Size(223, 28);
             this.getTicketLbl.TabIndex = 3;

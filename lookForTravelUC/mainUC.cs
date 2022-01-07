@@ -37,7 +37,7 @@ namespace lookForTravelUC
                     if (table.Rows[travelCB.SelectedIndex].Field<String>(4).Equals("1")) {
                         messageLabel.Text = $"{table.Rows[travelCB.SelectedIndex].Field<TimeSpan>(2)} -- {table.Rows[travelCB.SelectedIndex].Field<TimeSpan>(3)}";
                         getTicketLbl.Text = "Sign In To get a Ticket";
-                        Point point = new Point(130, 134);
+                        Point point = new Point(126, 134);
                         getTicketLbl.Location = point;
                         getTicketLbl.Visible = true;
                         searchResultPanel.Visible = true;
