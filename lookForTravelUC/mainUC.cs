@@ -36,7 +36,9 @@ namespace lookForTravelUC
                     datePickerValueLbl.Text = datePicker.Value.ToShortDateString();
                     if (table.Rows[travelCB.SelectedIndex].Field<String>(4).Equals("1")) {
                         messageLabel.Text = $"{table.Rows[travelCB.SelectedIndex].Field<TimeSpan>(2)} -- {table.Rows[travelCB.SelectedIndex].Field<TimeSpan>(3)}";
-                        getTicketLbl.Text = " Sign In To get a Ticket";
+                        getTicketLbl.Text = "Sign In To get a Ticket";
+                        Point point = new Point(130, 134);
+                        getTicketLbl.Location = point;
                         getTicketLbl.Visible = true;
                         searchResultPanel.Visible = true;
                     }
@@ -44,8 +46,8 @@ namespace lookForTravelUC
                         // Sign In To get a Ticket
                         //No travels left for today
                         messageLabel.Text = "No travels left for today";
-                        Point point = new Point(112, 134);
-                        messageLabel.Location = point;
+                        Point point = new Point(53, 134);
+                        getTicketLbl.Location = point;
                         getTicketLbl.Text = "Try changing the dates of your search.";
                         searchResultPanel.Visible = true;
                         getTicketLbl.Visible = true;
