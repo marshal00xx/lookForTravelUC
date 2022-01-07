@@ -14,9 +14,10 @@ namespace lookForTravelUC
 {
     public partial class mainUC: UserControl
     {
-        private static String _companyId = "COMP1000";
-        public static String companyId { set { _companyId = value; } }
-
+        private static String _companyId;
+        private static String _companyName;
+        public String companyId { set { _companyId = value; } }
+        public String companyName { set { _companyName = value; } }
         public static String connectionString = "Data source = .; initial catalog = transportMangment; integrated security = true";
         SqlConnection connection = new SqlConnection(connectionString);
         public mainUC()
@@ -24,7 +25,6 @@ namespace lookForTravelUC
             InitializeComponent();
         }
         private void mainUC_Load(object sender, EventArgs e) {
-            setDataSources();
             datePicker.MinDate = DateTime.Now;
         }
         private void seachBtn_Click(object sender, EventArgs e) {
@@ -44,6 +44,7 @@ namespace lookForTravelUC
                         travelCB.DataSource = table;
                         travelCB.DisplayMember = "travel";
                     }
+                    companyNameLabel.Text = _companyName;
                 }
             }
             catch(Exception ex) {

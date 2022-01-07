@@ -33,7 +33,7 @@
             this.seachBtn = new Guna.UI2.WinForms.Guna2Button();
             this.numOfPassgersTB = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.companyNameLabel = new Guna.UI.WinForms.GunaLabel();
             ((System.ComponentModel.ISupportInitialize)(this.numOfPassgersTB)).BeginInit();
             this.gunaPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -112,23 +112,23 @@
             // 
             // gunaPanel1
             // 
-            this.gunaPanel1.Controls.Add(this.gunaLabel1);
+            this.gunaPanel1.Controls.Add(this.companyNameLabel);
             this.gunaPanel1.Location = new System.Drawing.Point(0, 11);
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(334, 52);
             this.gunaPanel1.TabIndex = 6;
             // 
-            // gunaLabel1
+            // companyNameLabel
             // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(116)))), ((int)(((byte)(212)))));
-            this.gunaLabel1.Location = new System.Drawing.Point(102, 15);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(121, 28);
-            this.gunaLabel1.TabIndex = 0;
-            this.gunaLabel1.Text = "gunaLabel1";
-            this.gunaLabel1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.companyNameLabel.AutoSize = true;
+            this.companyNameLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.companyNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(116)))), ((int)(((byte)(212)))));
+            this.companyNameLabel.Location = new System.Drawing.Point(102, 15);
+            this.companyNameLabel.Name = "companyNameLabel";
+            this.companyNameLabel.Size = new System.Drawing.Size(121, 28);
+            this.companyNameLabel.TabIndex = 0;
+            this.companyNameLabel.Text = "gunaLabel1";
+            this.companyNameLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // mainUC
             // 
@@ -156,6 +156,6 @@
         private Guna.UI2.WinForms.Guna2Button seachBtn;
         private Guna.UI2.WinForms.Guna2NumericUpDown numOfPassgersTB;
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
-        private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI.WinForms.GunaLabel companyNameLabel;
     }
 }
