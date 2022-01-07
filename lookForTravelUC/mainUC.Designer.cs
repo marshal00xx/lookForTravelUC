@@ -156,12 +156,12 @@
             this.getTicketLbl.AutoSize = true;
             this.getTicketLbl.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.getTicketLbl.LinkColor = System.Drawing.Color.Black;
-            this.getTicketLbl.Location = new System.Drawing.Point(56, 134);
+            this.getTicketLbl.Location = new System.Drawing.Point(112, 134);
             this.getTicketLbl.Name = "getTicketLbl";
-            this.getTicketLbl.Size = new System.Drawing.Size(376, 28);
+            this.getTicketLbl.Size = new System.Drawing.Size(243, 28);
             this.getTicketLbl.TabIndex = 3;
             this.getTicketLbl.TabStop = true;
-            this.getTicketLbl.Text = "Try changing the dates of your search.";
+            this.getTicketLbl.Text = "No travels left for today";
             this.getTicketLbl.Visible = false;
             this.getTicketLbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.getTicketLbl_LinkClicked);
             // 

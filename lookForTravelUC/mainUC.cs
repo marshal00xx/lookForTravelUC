@@ -44,6 +44,8 @@ namespace lookForTravelUC
                         // Sign In To get a Ticket
                         //No travels left for today
                         messageLabel.Text = "No travels left for today";
+                        Point point = new Point(112, 134);
+                        messageLabel.Location = point;
                         getTicketLbl.Text = "Try changing the dates of your search.";
                         searchResultPanel.Visible = true;
                         getTicketLbl.Visible = true;
