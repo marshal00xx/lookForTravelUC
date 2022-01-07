@@ -44,6 +44,7 @@ namespace lookForTravelUC
                         travelCB.DataSource = table;
                         travelCB.DisplayMember = "travel";
                     }
+                    connection.Dispose();
                     companyNameLabel.Text = _companyName;
                 }
             }
